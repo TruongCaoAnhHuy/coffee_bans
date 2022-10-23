@@ -1,0 +1,21 @@
+@media (max-width: 46.1875em/*<740px*/) {
+    .slider__mobile-item-banner img {
+        width: 100%;
+    }
+    
+    .content__news {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 60px !important;
+    }
+
+    .content__recent--title {
+        padding-top: 0 !important;
+        margin-bottom: 40px !important;
+    }
+
+    .content__review {
+        margin-top: 150px;
+    }
+
+}

@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bans - clean coffee shop (demo)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/reponesive.css">
+
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reponesive.css">
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.css"> -->
+</head>
+<body>
+
+    <button class="scroll-top--btn" onclick="scrollToTop()">
+        <i class="ion-ios-arrow-thin-up"></i>
+    </button>
+
+    <div class="wrapper">
+
+        <div class="header">
+
+            <div class="header__middle">
+                <div class="header__middle--container container">
+                    <div class="header__middle--logo">
+                        <a href="#" class="theme-logo">
+                            <img src="../assets/img/logo.webp" alt="logo_Bans">
+                        </a>
+                    </div>
+                    <div class="header__middle--search">
+                        <div class="header__bottom--container container">
+                            <ul class="header__bottom--nav">
+                                <li>
+                                    Home
+                                    <i class="fa-solid fa-chevron-down icon-down"></i>
+                                    <ul class="header__bottom--subnav">
+                                        <li><a href="../index.html">Home Demo One</a></li>
+                                        <li><a href="#">Home Demo Two</a></li>
+                                        <li><a href="../home3/index.html">Home Demo Three</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="../shop_product/index.html">Shop</a> </li>
+                                <li> <a href="../blog/index.html">Blog</a> </li>
+                                <li> <a href="../about/index.html">About us</a> </li>
+                                <li> <a href="../contact/index.html">Contact</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__middle--icon">
+                        <div class="icon-love">
+                            <a href="#">
+                                <i class="ion-android-favorite-outline"></i>
+                                <span>Wishlist</span>
+                            </a>
+                        </div>
+                        <div class="icon-shopping">
+                            <a href="#">
+                                <span class="count">0</span>
+                                <i class="ti-shopping-cart"></i>
+                                <span class="text">My cart</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__mobile">
+                <div class="header__mobile-container container">
+                    
+                    <div class="header__mobile--left">
+                        <div class="header__mobile-logo">
+                            <img src="../assets/img/logo.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="header__mobile--right">
+
+                        <div class="header__mobile-search">
+                            <label for="mobile__search-bar--input" href="#">
+                                <i class="ion-ios-search-strong"></i> 
+                            </label>
+                        </div>
+
+                        <div class="header__mobile-iconlove">
+                            <a href="#">
+                                <i class="ion-android-favorite-outline"></i>
+                            </a>
+                        </div>
+
+                        <div class="header__mobile-iconshop">
+                            <label for="mobile__shop-bar--input" href="#">
+                                <span class="count">0</span>
+                                <i class="ti-shopping-cart"></i>
+                            </label>
+                        </div>
+
+                        <div class="header__mobile-price">
+                            <label for="mobile__price-bar--input" href="#">
+                                <i class=" ti-more "></i>
+                            </label>
+                        </div>
+                        
+                        <div class="header__mobile-nav">
+                            <label for="mobile__menu-bar--input" href="#">
+                                <i class="menu-icon fa-solid fa-bars"></i>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <input type="checkbox" hidden name="" class="mobile__search--checked" id="mobile__search-bar--input">
+                    <input type="checkbox" hidden name="" class="mobile__shop--checked" id="mobile__shop-bar--input">
+                    <input type="checkbox" hidden name="" class="mobile__price--checked" id="mobile__price-bar--input">
+                    <input type="checkbox" hidden name="" class="mobile__menu--checked" id="mobile__menu-bar--input">
+
+                    <div class="nav__overlay"></div>
+
+                    <div class="mobile__search-bar">
+                        <label for="mobile__search-bar--input" class="search__bar--close">
+                            <i class="ti-close"></i>
+                        </label>
+                        <form action="">
+                            <input type="search" value placeholder="Search our store" aria-label="Search our store" autocomplete="off">
+                            <button type="submit">
+                                <i class="ion-ios-search-strong"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="mobile__shop-bar">
+                        <label for="mobile__shop-bar--input" class="shop__bar--close">
+                            <i class="ion-android-close"></i>
+                        </label>
+                        <div class="shop__bar--cart">
+                            <h3>Cart</h3>
+                            <h3>Your cart is currently empty.</h3>
+                        </div>
+                    </div>                              
+                    <div class="mobile__price-bar">
+
+                        <label for="mobile__price-bar--input" class="mobile__bar--close">
+                            <i class="ti-close"></i>
+                        </label>
+                        <div class="mobile__online-price">
+                            <span>USD</span> <i class="fa-solid fa-angle-down"></i>
+                            <ul>
+                                <li><a href="#">USD - US Dollar</a></li>
+                                <li><a href="#">EUR - Euro</a></li>
+                                <li><a href="#">GPB - British Pound</a></li>
+                                <li><a href="#">INR - Indian Rupee</a></li>
+                                <li><a href="#">BDT - Bangladesh Taka</a></li>
+                                <li><a href="#">JPY - Japan Yen</a></li>
+                                <li><a href="#">CAD - Canada Dollar</a></li>
+                                <li><a href="#">AUD - Australian Dollar</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile__online-info">
+                            <a href="#">Sign In</a>
+                            -
+                            <a href="#">Register</a>
+                        </div>
+                        <div class="mobile__online-text">
+                            Order Online Call Us <a href="tel:#" class="number">(0123) 456789</a>
+                        </div>
+            
+                    </div>
+                    <div class="mobile__menu-bar">
+
+                        <label for="mobile__menu-bar--input" class="mobile__bar--close">
+                            <i class="ti-close"></i>
+                        </label>
+                        <div class="mobile__menu-bar--search">
+                            <form action="">
+                                <input type="search" value placeholder="Search our store" aria-label="Search our store" autocomplete="off" data-old-term="sada">
+                                <button type="submit">
+                                    <i class="ion-ios-search-strong"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <ul class="mobile__menu-bar--nav">
+                            <li id="menu__bar-nav--has-child">
+                                <a href="#">Home</a>
+                                <span id="menu__bar-nav--plus"><i class="ti-plus"></i></span>
+                                <ul class="mobile__menu-bar--subnav">
+                                    <li><a href="../index.html">Home Demo One</a></li>
+                                    <li><a href="#">Home Demo Two</a></li>
+                                    <li><a href="../home3/index.html">Home Demo Three</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="../shop_product/index.html">Shop</a> </li>
+                            <li> <a href="../blog/index.html">Blog</a> </li>
+                            <li> <a href="../about/index.html">About us</a> </li>
+                            <li> <a href="../contact/index.html">Contact</a> </li>
+                        </ul>
+                                   
+                    </div>
+                                        
+                </div>
+            </div>
+
+        </div>
+    
+        <div class="slider">
+
+            <div class="slider__item">
+                <div class="slider__item--banner">
+                    <img src="../assets/img/slider__2-1.webp" alt="coffee-banner2">
+                </div>
+                <div class="slider__mobile-item-banner">
+                    <img src="../assets/img/mobile-slider__2-1.webp" alt="">
+                </div>
+
+                <div class="slider__item--content">
+                    <div class="slider__item--text">
+                        <div class="slider__item--text-container">
+                            <div class="item__text--title">
+                                <h2>
+                                    A ROSTED
+                                    <br>
+                                    COFFEE FOR YOU
+                                </h2>
+                            </div>
+                            <div class="item__text--btn">
+                                <a href="#">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item--banner">
+                    <img src="../assets/img/slider__2-2.webp" alt="coffee-banner2">
+                </div>
+                <div class="slider__mobile-item-banner">
+                    <img src="../assets/img/mobile-slider__2-2.webp" alt="">
+                </div>
+
+                <div class="slider__item--content">
+                    <div class="slider__item--text">
+                        <div class="slider__item--text-container">
+                            <div class="item__text--title">
+                                <h2>
+                                    A SPECIAL
+                                    <br>
+                                    MORNING MOMENT
+                                </h2>
+                            </div>
+                            <div class="item__text--btn">
+                                <a href="#">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item--banner">
+                    <img src="../assets/img/slider__2-1.webp" alt="coffee-banner2">
+                </div>
+                <div class="slider__mobile-item-banner">
+                    <img src="../assets/img/mobile-slider__2-1.webp" alt="">
+                </div>
+
+                <div class="slider__item--content">
+                    <div class="slider__item--text">
+                        <div class="slider__item--text-container">
+                            <div class="item__text--title">
+                                <h2>
+                                    A ROSTED
+                                    <br>
+                                    COFFEE FOR YOU
+                                </h2>
+                            </div>
+                            <div class="item__text--btn">
+                                <a href="#">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item--banner">
+                    <img src="../assets/img/slider__2-2.webp" alt="coffee-banner2">
+                </div>
+                <div class="slider__mobile-item-banner">
+                    <img src="../assets/img/mobile-slider__2-2.webp" alt="">
+                </div>
+
+                <div class="slider__item--content">
+                    <div class="slider__item--text">
+                        <div class="slider__item--text-container">
+                            <div class="item__text--title">
+                                <h2>
+                                    A SPECIAL
+                                    <br>
+                                    MORNING MOMENT
+                                </h2>
+                            </div>
+                            <div class="item__text--btn">
+                                <a href="#">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="content">
+
+            <div class="content__news container">
+                <div class="content__news--img">
+                    <img src="../assets/img/news.webp" alt="">
+                </div>
+                <div class="content__news--text">
+                    <div class="content__news--text-title">
+                        <span>
+                            New stunning flavor
+                        </span>
+                        <h2>
+                            Great coffee
+                        </h2>
+                    </div>
+                    <div class="content__news--text-content">
+                        <p>
+                            Our coffee bar uses only Ethiopian coffee. All commercially produced coffee originates from Ethiopia. The fruity acidity of this single origin coffee is balanced by its sweet honey notes, creating soft, light notes with a light character. There are people who can’t start their day without having a freshly brewed cup of coffee and we understand them.
+                        </p>
+                    </div>
+                    <div class="content__news--text-btn">
+                        <a href="#">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__recent container">
+
+                <div class="content__recent--title">
+                    <h1>Recent Products</h1>
+                    <p>Choose your coffee</p>
+                </div>
+                <div class="content__recent--product">
+                    
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee1.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Brew Coffee Beans</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$80.00">$80.00</span>
+                                <span class="product__text--price-discout">$100.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+
+                        <div class="product__soldout">
+                            <span class="product__soldout--text">
+                                soldout
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee2.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Columbia Black Coffee</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$100.00">$100.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee3.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Virgin Coffee Greed</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$80.00">$80.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee4.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Vicarages Coffee Beans</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$80.00">$80.00</span>
+                                <span class="product__text--price-discout">$100.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+                        <div class="product__sale">
+                            <span class="product__sale--text">
+                                sale
+                            </span>
+                            <span class="product__sale--percent">
+                                -20%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee5.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Latte Macchiato Coffee</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$130.00">$130.00</span>
+                                <span class="product__text--price-discout">$150.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+                        <div class="product__sale">
+                            <span class="product__sale--text">
+                                sale
+                            </span>
+                            <span class="product__sale--percent">
+                                -13%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee6.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Brazil Coffee Greed</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$150.00">$150.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee7.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Cold Brew Coffee Beans</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$80.00">$80.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+
+                        <div class="product__soldout">
+                            <span class="product__soldout--text">
+                                soldout
+                            </span>
+                        </div>
+                    </div>   
+                        
+                </div>
+                
+            </div>
+
+            <div class="content__review">
+                
+                        <ul>
+                            <li data-letter="C"></li>
+                            <li data-letter="O"></li>
+                            <li data-letter="M"></li>
+                            <li data-letter="M"></li>
+                            <li data-letter="I"></li>
+                            <li data-letter="N"></li>
+                            <li data-letter="G"></li>
+                          <br />
+                            <li data-letter="S"></li>
+                            <li data-letter="O"></li>
+                            <li data-letter="O"></li>
+                            <li data-letter="N"></li>
+                        </ul>
+
+            </div>
+
+            <div class="content__product container">
+                <div class="content__product-item">
+
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee1.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Brew Coffee Beans</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$80.00">$80.00</span>
+                                <span class="product__text--price-discout">$100.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+
+                        <div class="product__soldout">
+                            <span class="product__soldout--text">
+                                soldout
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee2.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Columbia Black Coffee</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$100.00">$100.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee3.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Virgin Coffee Greed</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$80.00">$80.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee4.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Vicarages Coffee Beans</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$80.00">$80.00</span>
+                                <span class="product__text--price-discout">$100.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+                        <div class="product__sale">
+                            <span class="product__sale--text">
+                                sale
+                            </span>
+                            <span class="product__sale--percent">
+                                -20%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee5.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Latte Macchiato Coffee</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$130.00">$130.00</span>
+                                <span class="product__text--price-discout">$150.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+                        <div class="product__sale">
+                            <span class="product__sale--text">
+                                sale
+                            </span>
+                            <span class="product__sale--percent">
+                                -13%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product__item--slider">
+                        <div class="product__img">
+                            <a href="#">
+                                <img src="../assets/img/itemCoffee6.webp" alt="product1">
+                            </a>
+                        </div>
+                        <div class="product__text">
+                            <div class="product__text--title">
+                                <a href="#">
+                                    <h3>Brazil Coffee Greed</h3>
+                                </a>
+                            </div>
+                            <div class="product__text--price">
+                                <span data-currency-usd="$150.00">$150.00</span>
+                            </div>
+                        </div>
+                        <div class="product__icon--action">
+                            <a href="#">
+                                <i class="ti-heart product__icon-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ti-search product__icon-search"></i>
+                            </a>
+                        </div>
+                        <div class="product__cart--action">
+                            <a href="#">
+                                + Add to cart
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content__product-banner">
+                    <a href="#">
+                        <img src="../assets/img/banner.webp" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    
+        <div class="footer">
+            
+            <div class="footer__container container">
+                
+                <div class="footer__trademark">
+
+                    <div class="footer__trademark-img">
+                        <a href="#">
+                            <img src="../assets/img/logo.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__trademark-text">
+                        <p>
+                            There are people who can’t start their day without having a freshly brewed cup of coffee and we understand them.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="footer__nav">
+
+                    <h5>
+                        About
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Search
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../about/index.html">
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../account/index.html">
+                                Account
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="footer__social">
+
+                    <h5>
+                        Follow us on
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="ion-social-twitter"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ion-social-instagram"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ion-social-linkedin"></i>
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="footer__subscribe">
+
+                    <h2>
+                        Subscribe.
+                    </h2>
+                    <p>
+                        Subscribe to our newsletter to receive news on update.
+                    </p>
+                    <form action="">
+                        <div class="footer__subscribe--form">
+                            
+                            <input type="email" value placeholder="Your email address" autocapitalize="off" aria-label="email@example.com">
+                            <button type="submit">
+                                <i class="ion-ios-arrow-thin-right"></i>
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer__my-infor container">
+                <p>
+                    Trương Cao Anh Huy - 2008110179 - K14DCPM01.
+                </p>
+                <p>
+                    Địa chỉ: Cô Bắc, Phú Nhuận, TP.HCM
+                </p>
+                <p>
+                    Email: huytca2008110179@gmail.student.giadinh.edu.vn
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="../assets/js/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+</html>

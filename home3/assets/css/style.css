@@ -1,0 +1,141 @@
+
+.content {
+    height: 430px;
+    position: relative;
+}
+
+.content > ul {
+    width: 100%;
+    transform: translate(0, -50%);
+    position: absolute;
+    text-align: center;
+    font-size: 0;
+    left: 0;
+    top: 50%;
+}
+.content > ul > li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 0;
+    height: 40px;
+    width: 40px;
+}
+
+.content > ul > li:before, 
+.content > ul > li:after {
+    transition: transform 0.25s ease-in-out;
+    content: attr(data-letter);
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 3vw;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+@media screen and (orientation: landscape) {
+    .content > ul > li:before, 
+    .content > ul > li:after {
+      font-size: 3vh;
+    }
+}
+
+.content > ul > li[data-letter=" "] {
+    opacity: 0;
+  }
+  .content > ul > li:before {
+    transform-origin: top center;
+    transform: translate(0, 100%) rotateX(-90deg);
+    background-color: #333;
+    z-index: 1;
+    color: #fff;
+  }
+  .content > ul > li:after {
+    transform: translate(0, 0) rotateX(0deg);
+    transform-origin: bottom center;
+    background-color: #fff;
+    z-index: 1;
+    color: #333;
+  }
+  .content > ul > li:nth-of-type(10n+1):before {
+    transition-delay: 0s;
+  }
+  .content > ul > li:nth-of-type(10n+2):before {
+    transition-delay: 0.05s;
+  }
+  .content > ul > li:nth-of-type(10n+3):before {
+    transition-delay: 0.1s;
+  }
+  .content > ul > li:nth-of-type(10n+4):before {
+    transition-delay: 0.15s;
+  }
+  .content > ul > li:nth-of-type(10n+5):before {
+    transition-delay: 0.2s;
+  }
+  .content > ul > li:nth-of-type(10n+6):before {
+    transition-delay: 0.25s;
+  }
+  .content > ul > li:nth-of-type(10n+7):before {
+    transition-delay: 0.3s;
+  }
+  .content > ul > li:nth-of-type(10n+8):before {
+    transition-delay: 0.35s;
+  }
+  .content > ul > li:nth-of-type(10n+9):before {
+    transition-delay: 0.4s;
+  }
+  .content > ul > li:nth-of-type(10n+10):before {
+    transition-delay: 0.45s;
+  }
+  .content > ul > li:nth-of-type(10n+11):before {
+    transition-delay: 0.5s;
+  }
+  .content > ul > li:nth-of-type(10n+1):after {
+    transition-delay: 0s;
+  }
+  .content > ul > li:nth-of-type(10n+2):after {
+    transition-delay: 0.05s;
+  }
+  .content > ul > li:nth-of-type(10n+3):after {
+    transition-delay: 0.1s;
+  }
+  .content > ul > li:nth-of-type(10n+4):after {
+    transition-delay: 0.15s;
+  }
+  .content > ul > li:nth-of-type(10n+5):after {
+    transition-delay: 0.2s;
+  }
+  .content > ul > li:nth-of-type(10n+6):after {
+    transition-delay: 0.25s;
+  }
+  .content > ul > li:nth-of-type(10n+7):after {
+    transition-delay: 0.3s;
+  }
+  .content > ul > li:nth-of-type(10n+8):after {
+    transition-delay: 0.35s;
+  }
+  .content > ul > li:nth-of-type(10n+9):after {
+    transition-delay: 0.4s;
+  }
+  .content > ul > li:nth-of-type(10n+10):after {
+    transition-delay: 0.45s;
+  }
+  .content > ul > li:nth-of-type(10n+11):after {
+    transition-delay: 0.5s;
+  }
+
+  .content.active ul li:before {
+    transform: translate(0, 0) rotateX(0deg);
+    z-index: 2;
+  }
+  .content.active ul li:after {
+    transform: translate(0, -100%) rotateX(90deg);
+    z-index: 1;
+  }
+  .content.active ul li:after[data-letter=" "] {
+    opacity: 0;
+  }

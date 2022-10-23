@@ -1,0 +1,184 @@
+.content__recent--title {
+    margin-bottom: 50px;
+}
+
+.content__recent--title h1 {
+    font-size: 48px;
+    line-height: 64px;
+    margin-top: -13px;
+    margin-bottom: 15px;
+}
+
+
+/* contact */
+
+.content__contact {
+
+}
+
+.content__contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__contact--right {
+    position: relative;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+}
+
+.content__contact--right h3 {
+    color: #333;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.content__contact--right > p {
+    margin-bottom: 15px;
+}
+
+.contant__icon-map {
+
+}
+
+.contant__icon-phone {
+
+}
+
+.contant__icon-mail {
+
+}
+
+.contant__icon-time {
+
+}
+
+.contant__icon-map,
+.contant__icon-phone,
+.contant__icon-mail,
+.contant__icon-time {
+    display: flex;
+    align-items: center;
+}
+
+.contant__icon-map i,
+.contant__icon-phone i,
+.contant__icon-mail i,
+.contant__icon-time i {
+    font-size: 35px;
+    color: #333;
+    line-height: 1;
+}
+
+.contant__icon-map p {
+    padding-left: 30px !important;
+}
+
+.contant__icon-map p,
+.contant__icon-phone p,
+.contant__icon-mail p,
+.contant__icon-time p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #878787;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    margin-top: 11px;
+}
+
+.content__contact--left {
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-name,
+.input-email {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.input-email {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.input-subject {
+
+}
+
+.input-mess {
+
+}
+
+.input-name,
+.input-email,
+.input-subject,
+.input-mess {
+    width: 100%;
+    margin-bottom: 40px!important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.input-name input,
+.input-email input,
+.input-subject input,
+.input-mess input {
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    color: #333;
+    border: 1px solid transparent;
+    transition: all .3s ease-in-out;
+    background: 0 0;
+    border-bottom: 2px solid #ccc;
+    padding: 9.5px 0;
+    font-family: Work Sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.input-btn {
+    user-select: none;
+}
+
+.input-btn button {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+    font-size: 14px;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 0;
+    border: 1px solid #333;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.input-btn button:hover {
+    background-color: #0000;
+    color: #333;
+    border-color: #333;
+}
+
+.content__contact-map {
+    width: 100%;
+    background: url(/assets/img/map.jpg);
+    padding-top: 50%;
+    margin-top: 100px;
+}
+
+.content__contact--left input {
+    outline: 0;
+}
+
+.input-btn button {
+    transition: .3s;
+}

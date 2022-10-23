@@ -1,0 +1,16 @@
+.content__news--img {
+    transition: .3s;
+}
+
+.content__news--img a {
+    display: block !important;
+}
+
+.content__news--img img {
+    height: 344.1px;
+    cursor: pointer;
+}
+
+.content__news--img:hover {
+    opacity: 0.5;
+}

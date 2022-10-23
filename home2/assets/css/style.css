@@ -1,0 +1,178 @@
+.header__bottom--nav > li,
+.header__bottom--nav > li a{
+    color: #7e7e7e !important;
+}
+
+.header__bottom--nav > li:hover,
+.header__bottom--nav > li:hover > a{
+    color: #c7a17a !important;
+}
+
+.item__text--title h2,
+.item__text--content h5 {
+    color:  var(--white_color) !important;
+}
+
+.item__text--btn {
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+
+.item__text--btn a {
+    color: #333 !important;
+}
+
+.item__text--btn:hover {
+    background-color: transparent !important;
+}
+
+.item__text--btn:hover a {
+    color: #fff !important;
+}
+
+.content__news {
+    padding-top: 90px !important;
+}
+
+
+.content__review {
+    height: 430px;
+    position: relative;
+    background: url(/assets/img/review__2.webp) !important;
+}
+
+.content__review > ul {
+    width: 100%;
+    transform: translate(0, -50%);
+    position: absolute;
+    text-align: center;
+    font-size: 0;
+    left: 0;
+    top: 50%;
+}
+.content__review > ul > li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 0;
+    height: 40px;
+    width: 40px;
+}
+
+.content__review > ul > li:before, 
+.content__review > ul > li:after {
+    transition: transform 0.25s ease-in-out;
+    content: attr(data-letter);
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 3vw;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+@media screen and (orientation: landscape) {
+    .content__review > ul > li:before, 
+    .content__review > ul > li:after {
+      font-size: 3vh;
+    }
+}
+
+.content__review > ul > li[data-letter=" "] {
+    opacity: 0;
+  }
+  .content__review > ul > li:before {
+    transform-origin: top center;
+    transform: translate(0, 100%) rotateX(-90deg);
+    background-color: #333;
+    z-index: 1;
+    color: #fff;
+  }
+  .content__review > ul > li:after {
+    transform: translate(0, 0) rotateX(0deg);
+    transform-origin: bottom center;
+    background-color: transparent;
+    z-index: 1;
+    color: #333;
+  }
+  .content__review > ul > li:nth-of-type(10n+1):before {
+    transition-delay: 0s;
+  }
+  .content__review > ul > li:nth-of-type(10n+2):before {
+    transition-delay: 0.05s;
+  }
+  .content__review > ul > li:nth-of-type(10n+3):before {
+    transition-delay: 0.1s;
+  }
+  .content__review > ul > li:nth-of-type(10n+4):before {
+    transition-delay: 0.15s;
+  }
+  .content__review > ul > li:nth-of-type(10n+5):before {
+    transition-delay: 0.2s;
+  }
+  .content__review > ul > li:nth-of-type(10n+6):before {
+    transition-delay: 0.25s;
+  }
+  .content__review > ul > li:nth-of-type(10n+7):before {
+    transition-delay: 0.3s;
+  }
+  .content__review > ul > li:nth-of-type(10n+8):before {
+    transition-delay: 0.35s;
+  }
+  .content__review > ul > li:nth-of-type(10n+9):before {
+    transition-delay: 0.4s;
+  }
+  .content__review > ul > li:nth-of-type(10n+10):before {
+    transition-delay: 0.45s;
+  }
+  .content__review > ul > li:nth-of-type(10n+11):before {
+    transition-delay: 0.5s;
+  }
+  .content__review > ul > li:nth-of-type(10n+1):after {
+    transition-delay: 0s;
+  }
+  .content__review > ul > li:nth-of-type(10n+2):after {
+    transition-delay: 0.05s;
+  }
+  .content__review > ul > li:nth-of-type(10n+3):after {
+    transition-delay: 0.1s;
+  }
+  .content__review > ul > li:nth-of-type(10n+4):after {
+    transition-delay: 0.15s;
+  }
+  .content__review > ul > li:nth-of-type(10n+5):after {
+    transition-delay: 0.2s;
+  }
+  .content__review > ul > li:nth-of-type(10n+6):after {
+    transition-delay: 0.25s;
+  }
+  .content__review > ul > li:nth-of-type(10n+7):after {
+    transition-delay: 0.3s;
+  }
+  .content__review > ul > li:nth-of-type(10n+8):after {
+    transition-delay: 0.35s;
+  }
+  .content__review > ul > li:nth-of-type(10n+9):after {
+    transition-delay: 0.4s;
+  }
+  .content__review > ul > li:nth-of-type(10n+10):after {
+    transition-delay: 0.45s;
+  }
+  .content__review > ul > li:nth-of-type(10n+11):after {
+    transition-delay: 0.5s;
+  }
+
+  .content__review.active ul li:before {
+    transform: translate(0, 0) rotateX(0deg);
+    z-index: 2;
+  }
+  .content__review.active ul li:after {
+    transform: translate(0, -100%) rotateX(90deg);
+    z-index: 1;
+  }
+  .content__review.active ul li:after[data-letter=" "] {
+    opacity: 0;
+  }

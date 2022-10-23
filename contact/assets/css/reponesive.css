@@ -1,0 +1,9 @@
+@media (max-width: 46.1875em/*<740px*/) {
+    .content__contact-container {
+        flex-direction: column;
+    }
+    
+    .content__contact--right {
+        max-width: 100%;
+    }
+}
