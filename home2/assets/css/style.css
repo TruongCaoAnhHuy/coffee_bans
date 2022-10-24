@@ -38,7 +38,7 @@
 .content__review {
     height: 430px;
     position: relative;
-    background: url(/assets/img/review__2.webp) !important;
+    background: url(../img/review__2.webp) !important;
 }
 
 .content__review > ul {

@@ -170,7 +170,7 @@
 
 .content__contact-map {
     width: 100%;
-    background: url(/assets/img/map.jpg);
+    background: url(../img/map.jpg);
     padding-top: 50%;
     margin-top: 100px;
 }

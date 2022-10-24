@@ -882,7 +882,7 @@ body {
 }
 
 .content__review {
-    background: url(/assets/img/review.webp) no-repeat scroll center center / cover;
+    background: url(../img/review__2.webp) no-repeat scroll center center / cover;
     padding-top: 135px;
     padding-bottom: 135px;
     margin-bottom: 100px;
@@ -1518,6 +1518,7 @@ body {
 
 .mobile__menu-bar--subnav > li {
     margin-bottom: 0;
+    transition: all .6s ease-out;
 }
 
 .mobile__menu-bar--subnav > li > a {
