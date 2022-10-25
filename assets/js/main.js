@@ -79,39 +79,3 @@ const sliderTextContent = document.querySelectorAll('.item__text--content');
 const sliderTextBtn = document.querySelectorAll('.item__text--btn');
 const sliderText = document.querySelectorAll('.slider__item--text');
 const sliderItems = document.querySelectorAll('.slider__item');
-
-//btn listens
-
-const sliderNextBtn = document.getElementsByClassName('slick-next slick-arrow')
-const sliderPrevBtn = document.getElementsByClassName('slick-prev slick-arrow')
-
-for(const sliderNextBtnItem of sliderNextBtn) {
-  sliderNextBtnItem.addEventListener('click', function() {
-    console.log('clickNext');
-  })
-}
-
-console.log(sliderNextBtn)
-
-function addAnimationText() {
-  for(let i = 0; i < sliderItems.length; i++){
-    sliderTextTittle[i].classList.add('active');
-    sliderTextContent[i].classList.add('active');
-    sliderTextBtn[i].classList.add('active');
-  }
-}
-
-function removeAnimationText() {
-  for(let i = 0; i < sliderItems.length; i++){
-    sliderTextBtn[i].addEventListener('animationend', function() {
-      sliderTextTittle[i].classList.remove('active');
-      sliderTextContent[i].classList.remove('active');
-      sliderTextBtn[i].classList.remove('active');
-    })
-  }
-}
-
-window.addEventListener('load', addAnimationText());   
-for(const sliderTextBtnItem of sliderTextBtn) {
-  sliderTextBtnItem.addEventListener('animationend', removeAnimationText());
-}

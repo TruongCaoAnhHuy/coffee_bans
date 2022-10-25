@@ -386,11 +386,11 @@ body {
 
 .item__text--title {
     margin-bottom: 16px;
-    /* animation: fadeInUp 1.5s both .2s; */
+    animation: fadeInUp 1.5s both .2s;
 }
 
 .item__text--title.active {
-    animation: fadeInUp 1.5s both .2s;
+    /* animation: fadeInUp 1.5s both .2s; */
 }
 
 .item__text--title h2 {
@@ -404,11 +404,11 @@ body {
 .item__text--content {
     width: 58%;
     margin-bottom: 33px;
-    /* animation: fadeInUp 1s both .2s; */
+    animation: fadeInUp 1s both .2s;
 }
 
 .item__text--content.active {
-    animation: fadeInUp 1s both .2s;
+    /* animation: fadeInUp 1s both .2s; */
 }
 
 .item__text--content h5 {
@@ -429,12 +429,12 @@ body {
     padding: 10px 45px;
     user-select: none;
     cursor: pointer;
-    /* animation: fadeInUp 2.5s both .3s; */
+    animation: fadeInUp 2.5s both .3s;
 
 }
 
 .item__text--btn.active {
-    animation: fadeInUp 2.5s both .3s;
+    /* animation: fadeInUp 2.5s both .3s; */
 }
 
 .item__text--btn a {
@@ -517,7 +517,7 @@ body {
     }
     100% {
         opacity: 1;
-        transform: translateZ(0);
+        transform: translateY(0);
     }
 }
 
@@ -882,7 +882,7 @@ body {
 }
 
 .content__review {
-    background: url(../img/review__2.webp) no-repeat scroll center center / cover;
+    background: url(../img/review.webp) no-repeat scroll center center / cover;
     padding-top: 135px;
     padding-bottom: 135px;
     margin-bottom: 100px;
